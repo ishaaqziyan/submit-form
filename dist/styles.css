@@ -1006,6 +1006,15 @@ html {
   outline-offset: 2px;
 }
 
+.input-error {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--er) / var(--tw-border-opacity));
+}
+
+.input-error:focus {
+  outline: 2px solid hsl(var(--er));
+}
+
 .input-disabled,
   .input[disabled] {
   cursor: not-allowed;
@@ -1153,6 +1162,10 @@ html {
   border-top-right-radius: 0;
   border-bottom-left-radius: var(--rounded-btn, 0.5rem);
   border-bottom-right-radius: var(--rounded-btn, 0.5rem);
+}
+
+.static {
+  position: static;
 }
 
 .my-3 {
